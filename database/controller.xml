@@ -47,6 +47,7 @@ synonyms                       : false
   <include file="table/application_params_table.xml"/> 
   <include file="procedure/secure_dml_procedure.xml"/> 
   <include file="table/countries_table.xml"/> 
+  <include file="table/locations_table.xml"/> 
   <include file="view/emp_details_view_view.xml"/> 
   <include file="trigger/secure_countries_trigger.xml"/> 
   <include file="trigger/secure_regions_trigger.xml"/> 

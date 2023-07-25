@@ -1,5 +1,7 @@
-This is a script that will prepare sample objects used in part 1 of my blog series:
+This is a script that will prepare sample objects used in parts 1-2 of my blog series:
 https://rafal.hashnode.dev/use-sqlcl-liquibase-to-move-all-database-objects-from-dev-to-the-uat-environment-part-1
+https://rafal.hashnode.dev/track-your-dev-database-changes-using-sqlcl-liquibase-and-move-it-to-uat-part-2
+
 
 Prerequisities:
 1. You need to have either:

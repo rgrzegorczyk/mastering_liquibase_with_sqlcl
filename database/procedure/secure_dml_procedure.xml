@@ -5,7 +5,7 @@
 	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
 	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
-	<changeSet id="71773285fb3108a3b8aa0386dbf24ffebbb2db90" author="(DEV)-Generated" failOnError="false"   runOnChange="true" runAlways="false"  >
+	<changeSet id="52b55716d45147bf400dc156e82bae7e4283381b" author="(DEV)-Generated" failOnError="false"   runOnChange="true" runAlways="false"  >
 		<n0:createOracleProcedure objectName="SECURE_DML" objectType="PROCEDURE" ownerName="DEV"  replaceIfExists="true" >
 			<n0:source><![CDATA[
   CREATE OR REPLACE EDITIONABLE PROCEDURE "DEV"."SECURE_DML" 
@@ -15,10 +15,9 @@ begin
       or TO_CHAR(SYSDATE, 'DY') in ('SAT', 'SUN')
    then
       RAISE_APPLICATION_ERROR(-20205,
-                              'You may only make changes during normal office hours');
+                              'This is a change for this blog.You may only make changes during normal office hours');
    end if;
-end secure_dml;
-]]></n0:source>
+end secure_dml;]]></n0:source>
 		</n0:createOracleProcedure>
 	</changeSet>
 </databaseChangeLog>
